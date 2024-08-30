@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan_2305</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">Muskan Gupta</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://muskan23gupta.github.io/Description_page/">About</a></li>
+                        <li><a href="https://drive.google.com/file/d/14WrVZgbO4u35l2x6fxymZ0ik2VPfJB2C/view?usp=drivesdk">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Muskan Gupta</h1>
+                    <p> I am a passionate software developer with a strong interest in creating interactive web applications and games. I have experience in building projects like Snake Game and Maze Game, demonstrating my skills in coding and problem-solving. I am continuously enhancing my technical abilities, aiming to contribute to innovative and impactful tech solutions.
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="https://drive.google.com/file/d/14WrVZgbO4u35l2x6fxymZ0ik2VPfJB2C/view?usp=drivesdk" class="btn active">Download CV</a>
+                       <a href="contact.html" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100070671302213&mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/muskan-gupta-3704a6271"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/muskangupta316?igsh=aDdhZTcxYmsyMTBr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/muskan23gupta"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/MuskanGupt92046?t=7bsiaN-KkAee2B_5FmR6SA&s=08"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Developer","Problem Solver", "Programmer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
